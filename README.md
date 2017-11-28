@@ -89,8 +89,8 @@ FILE: total.txt
 ##### Survey: http://www.psytoolkit.org/cgi-bin/psy2.4.0/survey?s=VCA3r
 
 ##### Reference: 
-1. Jasabanta Patro, Bidisha Samanta, Saurabh Singh, Abhipsa Basu, Prithwish Mukherjee, Monojit Choudhury, Animesh Mukherjee, "All that is English may be Hindi: Enhancing language identification through automatic ranking of likeliness of word borrowing in social media", EMNLP 2017
+1. Jasabanta Patro, Bidisha Samanta, Saurabh Singh, Abhipsa Basu, Prithwish Mukherjee, Monojit Choudhury, Animesh Mukherjee, "All that is English may be Hindi: Enhancing language identification through automatic ranking of likeliness of word borrowing in social media", EMNLP 2017 . [See here](https://arxiv.org/abs/1707.08446)
 2. Psytoolkit: www.psytoolkit.org
-3. K. Bali, J. Sharma, M. Choudhury, and Y. Vyas. 2014. “i am borrowing ya mixing?” an analysis of english-hindi code mixing in facebook. In First workshop on Computational approaches to code-switching, EMNLP, page 116.
+3. K. Bali, J. Sharma, M. Choudhury, and Y. Vyas. 2014. “i am borrowing ya mixing?” an analysis of english-hindi code mixing in facebook. In First workshop on Computational approaches to code-switching, EMNLP, page 116. [See here](https://www.aclweb.org/anthology/W14-3914)
 Survey: http://www.psytoolkit.org/cgi-bin/psy2.4.0/survey?s=VCA3r
 
