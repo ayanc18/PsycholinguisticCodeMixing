@@ -1,7 +1,7 @@
 # Psycholinguistic Analysis of Code Mixing
 Speech and Natural Language Processing Term Project: CS60057. 
 
-Team members:
+##### Team members:
 1. Avirup Saha
 2. Indrasekhar Sengupta
 3. Soumi Das
@@ -29,39 +29,25 @@ The metrics and the format of the files are provided below for clear understanda
 **Metric 4**:  (Transliterated valid/Average reaction time of transliterated valid)/((Translated valid/Average reaction time of translated valid) + (Transliterated invalid/Average reaction time of transliterated invalid))
 
 FILE: result.txt
-
 Col1: Word
-
 Col2: Translated/Transliterated
-
 Col3: Valid/Invalid/TimeOut
-
 Col4: Response Time
 
 FILE: output_file.txt
-
 Distinct word sets (57)
 
 FILE: reaction_time_count1.txt
-
 Col1: word (for all words)
-
 Col2: participant
-
 Col3: transliterated time
-
 Col4: translated time
 
 FILE: avgreaction_dict1.txt
-
 Col1: Word
-
 Col2: Metric1
-
 Col3: Metric 2
-
 Col4: Metric 3
-
 Col5: Metric 4
 
 FILE: sortedRankedWordByMetric1.txt : Rank list on the basis of Metric1
@@ -98,9 +84,9 @@ Col2: Total Transliterated Count
 Col3: Total Translated Count
 Col3: Euclidean Distance (calculated on the basis of the Transliterated and Translated Index we calculated in vectorword.txt )
 
-###### Survey: http://www.psytoolkit.org/cgi-bin/psy2.4.0/survey?s=VCA3r
+##### Survey: http://www.psytoolkit.org/cgi-bin/psy2.4.0/survey?s=VCA3r
 
-###### Reference: 
+##### Reference: 
 1. Jasabanta Patro, Bidisha Samanta, Saurabh Singh, Abhipsa Basu, Prithwish Mukherjee, Monojit Choudhury, Animesh Mukherjee, "All that is English may be Hindi: Enhancing language identification through automatic ranking of likeliness of word borrowing in social media", EMNLP 2017
 2. Psytoolkit: www.psytoolkit.org
 3. K. Bali, J. Sharma, M. Choudhury, and Y. Vyas. 2014. “i am borrowing ya mixing?” an analysis of english-hindi code mixing in facebook. In First workshop on Computational approaches to code-switching, EMNLP, page 116.
