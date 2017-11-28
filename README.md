@@ -20,10 +20,10 @@ Find_spcorr: This file finds the Spearman Correlation Coefficient between the ra
 
 The metrics and the format of the files are provided below for clear understandability:
 
-Metric 1: Transliterated valid/Translated valid
-Metric 2: Transliterated valid/(Translated valid+Transliterated Valid)
-Metric 3: (Transliterated valid/Average reaction time of transliterated valid)/(Translated valid/Average reaction time of translated valid)
-Metric 4:  (Transliterated valid/Average reaction time of transliterated valid)/((Translated valid/Average reaction time of translated valid) + (Transliterated invalid/Average reaction time of transliterated invalid))
+**Metric 1**: Transliterated valid/Translated valid
+**Metric 2**: Transliterated valid/(Translated valid+Transliterated Valid)
+**Metric 3**: (Transliterated valid/Average reaction time of transliterated valid)/(Translated valid/Average reaction time of translated valid)
+**Metric 4**:  (Transliterated valid/Average reaction time of transliterated valid)/((Translated valid/Average reaction time of translated valid) + (Transliterated invalid/Average reaction time of transliterated invalid))
 
 FILE: result.txt
 Col1: Word
@@ -81,9 +81,9 @@ Col2: Total Transliterated Count
 Col3: Total Translated Count
 Col3: Euclidean Distance (calculated on the basis of the Transliterated and Translated Index we calculated in vectorword.txt )
 
-# Survey: http://www.psytoolkit.org/cgi-bin/psy2.4.0/survey?s=VCA3r
+###### Survey: http://www.psytoolkit.org/cgi-bin/psy2.4.0/survey?s=VCA3r
 
-# Reference: 
+###### Reference: 
 Jasabanta Patro, Bidisha Samanta, Saurabh Singh, Abhipsa Basu, Prithwish Mukherjee, Monojit Choudhury, Animesh Mukherjee, "All that is English may be Hindi: Enhancing language identification through automatic ranking of likeliness of word borrowing in social media", EMNLP 2017
 Psytoolkit: www.psytoolkit.org
 K. Bali, J. Sharma, M. Choudhury, and Y. Vyas. 2014. “i am borrowing ya mixing?” an analysis of english-hindi code mixing in facebook. In First workshop on Computational approaches to code-switching, EMNLP, page 116.
