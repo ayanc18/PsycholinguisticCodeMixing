@@ -17,7 +17,8 @@ The following files are to be executed in the chronological order as mentioned:
 3. **Partc_resp_time_v2.py**: This file is the core of entire project. It computes the 4 metrics defined of all distinct words and stores it in “avgreaction_dict.txt” and also keeps the translation and transliteration time of each word and each participant in “reaction_time_count1.txt”.
 4. **sortrankList.py**: This file sorts the words on the basis of the 4 metrics and stores them in 4 different files named as “sortedRankedWordByMetric(1/2/3/4).txt”.
 5. **Find_spcorr.py**: This file finds the Spearman Correlation Coefficient between the ranks provided by the baseline paper[1] and the ranks we obtained in the last file above. So we get 4 correlation coefficients for the 4 metrics.
-6. **Word2vec_cm.py**: This file represents each word ( both transliterated and translated ) in the form of a vector depending on a particular trend [ Number of people terming it (transliterated / translated) as valid in the particular bucket / total number of people terming it as valid in all buckets ]. We find out the L2 norm between the 2 versions of the words.
+6. **Word2vec_cm.py**: This file represents each word ( both transliterated and translated ) in the form of a vector depending on a particular trend [ Number of people terming it (transliterated / translated) as valid in the particular bucket / total number of people terming it as valid in all buckets ]. We find out the L2 norm between the 2 versions of the words.We sort the L2 norm values in descending and ascending order i.e for e.g if the word “well” has the greatest L2 norm value, we rank it 1 in Descending terms and 57 ( since there are 57 words in total ) in Ascending terms. We also find the Spearman Correlation Coefficient value between the baseline paper provided ranks and the ranks we obtain using the L2 norm values
+7. **Plot_resp_time_count.py**: This file plots the response time vs. response count for each word. Both the transliterated and translated versions are plotted in a single graph for each word. The blue curves represent translated word and red curves represent transliterated form of the words.
 
 
 The metrics and the format of the files are provided below for clear understandability:
@@ -68,23 +69,33 @@ FILE: sortedRankedWordByMetric4.txt : Rank list on the basis of Metric4
 1. Col1: Word
 2. Col2: Rank
 
-FILE: vectorword.txt
+FILE: vectorword(i).txt :Contains the words and the respective probability values(mentioned in Word2vec_cm.py) in the bucket for the i-th interval (1<=i<=10    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
 1. Col1 : Word
-2. Col2: Interval
+2. Col2: Bucket
 3. Col3: Transliterated Index ( dimension)
 4. Col4: Translated Index (dimension)
 
-FILE: interval.txt
+FILE: interval(i).txt : Contains the words and the respective count of participants responding in the bucket for the i-th interval (1<=i<=10    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
 1. Col1: Word
-2. Col2: Interval start
-3. Col3: Number of participants terming it as transliterated in the interval
-4. Col4: Number of participants terming it as translated in the interval
+2. Col2: Bucket start
+3. Col3: Number of participants terming it as transliterated in the bucket
+4. Col4: Number of participants terming it as translated in the bucket
 
-FILE: total.txt
+FILE: total(i).txt : Contains the words and their respective L2 norm values for the i-th interval (1<=i<=10    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
 1. Col1: Word
 2. Col2: Total Transliterated Count
 3. Col3: Total Translated Count
-4. Col3: Euclidean Distance (calculated on the basis of the Transliterated and Translated Index we calculated in vectorword.txt )
+4. Col3: Euclidean Distance (calculated on the basis of the Transliterated and Translated Index we calculated in vectorword (i).txt )
+
+FILE: sortedlist.txt: Contains the sorted list of words on the basis of L2 norms(descending order) and their L2 norms for each interval i ( 1<=i<=10 )
+1. Heading: ith interval
+2. Col 1: Word
+3. Col 2: L2 Norm
+
+FILE: ascendingOrderCorrelation.txt: Contains the intervals and their respective Spearman Correlation Coefficient.
+
+FILE: descendingOrderCorrelation.txt: Contains the intervals and their respective Spearman Correlation Coefficient.
+
 
 ##### Survey: http://www.psytoolkit.org/cgi-bin/psy2.4.0/survey?s=VCA3r
 
