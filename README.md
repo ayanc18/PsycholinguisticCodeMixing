@@ -16,7 +16,7 @@ The following files are to be executed in the chronological order as mentioned:
 2. **Keywordnet.py**: This file is used to extract the distinct set of words used for transliteration and translation with the output being stored in “output_file.txt”
 3. **Partc_resp_time_v2.py**: This file is the core of entire project. It computes the 4 metrics defined of all distinct words and stores it in “avgreaction_dict.txt” and also keeps the translation and transliteration time of each word and each participant in “reaction_time_count1.txt”.
 4. **sortrankList.py**: This file sorts the words on the basis of the 4 metrics and stores them in 4 different files named as “sortedRankedWordByMetric(1/2/3/4).txt”.
-5. **Find_spcorr.py**: This file finds the Spearman Correlation Coefficient between the ranks provided by the baseline paper(link to the paper) and the ranks we obtained in the last file above. So we get 4 correlation coefficients for the 4 metrics.
+5. **Find_spcorr.py**: This file finds the Spearman Correlation Coefficient between the ranks provided by the baseline paper[1] and the ranks we obtained in the last file above. So we get 4 correlation coefficients for the 4 metrics.
 6. **Word2vec_cm.py**: This file represents each word ( both transliterated and translated ) in the form of a vector depending on a particular trend [ Number of people terming it (transliterated / translated) as valid in the particular bucket / total number of people terming it as valid in all buckets ]. We find out the L2 norm between the 2 versions of the words.
 
 
