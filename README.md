@@ -11,8 +11,11 @@ Department of Computer science and Engineering, Indian Institute of Technology K
 
 Detailed Project Report: ProjectReport.pdf is uploaded here.
 
-Package dependencies:numpy,scipy
+Pre-requisite:
+1. Run-time environment: Python v3.6
+2. Package dependencies:numpy,scipy,matplotlib
 
+**First extract the data.zip in your present working directory.**
 The following files are to be executed in the chronological order as mentioned:
 
 1. **Concat_files.py**: This file is used to extract the files of all valid users ( users who have completed all the 3 surveys ) and write the contents from all users’ files to a file named as “result.txt”
