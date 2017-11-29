@@ -31,7 +31,7 @@ The metrics and the format of the files are provided below for clear understanda
 
 **Metric 1**: Transliterated valid/Translated valid
 
-**Metric 2**: Transliterated valid/(Translated valid+Transliterated Valid)
+**Metric 2**: Transliterated valid/(Translated valid+Transliterated invalid)
 
 **Metric 3**: (Transliterated valid/Average reaction time of transliterated valid)/(Translated valid/Average reaction time of translated valid)
 
@@ -79,25 +79,25 @@ FILE: sortedRankedWordByMetric4.txt : Rank list on the basis of Metric4
 1. Col1: Word
 2. Col2: Rank
 
-FILE: vectorword(i).txt :Contains the words and the respective probability values(mentioned in Word2vec_cm.py) in the bucket for the i-th interval (1<=i<=10    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
+FILE: vectorword(i).txt :Contains the words and the respective probability values(mentioned in Word2vec_cm.py) in the bucket for the interval of size i (i = {50, 100, 150, ... ,500}    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
 1. Col1 : Word
 2. Col2: Bucket
 3. Col3: Transliterated Index ( dimension)
 4. Col4: Translated Index (dimension)
 
-FILE: interval(i).txt : Contains the words and the respective count of participants responding in the bucket for the i-th interval (1<=i<=10    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
+FILE: interval(i).txt : Contains the words and the respective count of participants responding in the bucket for the interval of size i (i = {50, 100, 150, ... ,500}    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
 1. Col1: Word
 2. Col2: Bucket start
 3. Col3: Number of participants terming it as transliterated in the bucket
 4. Col4: Number of participants terming it as translated in the bucket
 
-FILE: total(i).txt : Contains the words and their respective L2 norm values for the i-th interval (1<=i<=10    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
+FILE: total(i).txt : Contains the words and their respective L2 norm values for the interval of size i (i = {50, 100, 150, ... ,500}    Here ‘i’ refers to 50 when we take 0-50, 50-100… , i refers to 100 when we take 0-100, 100 - 200 etc )
 1. Col1: Word
 2. Col2: Total Transliterated Count
 3. Col3: Total Translated Count
 4. Col3: Euclidean Distance (calculated on the basis of the Transliterated and Translated Index we calculated in vectorword (i).txt )
 
-FILE: sortedlist.txt: Contains the sorted list of words on the basis of L2 norms(descending order) and their L2 norms for each interval i ( 1<=i<=10 )
+FILE: sortedlist.txt: Contains the sorted list of words on the basis of L2 norms(descending order) and their L2 norms for each interval of size i (i = {50, 100, 150, ... ,500})
 1. Heading: ith interval
 2. Col 1: Word
 3. Col 2: L2 Norm
