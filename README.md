@@ -9,6 +9,7 @@ Department of Computer science and Engineering, Indian Institute of Technology K
 3. Soumi Das
 4. Ayan Chandra
 
+Detailed Project Report: ProjectReport.pdf is uploaded here.
 
 The following files are to be executed in the chronological order as mentioned:
 
