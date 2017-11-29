@@ -40,23 +40,24 @@ The metrics and the format of the files are provided below for clear understanda
 **Metric 5**:  L2 norm of (Transliterated Word Vector, Translated Word Vector)
                Word Vector = Probability distribution of the word in a particular interval(0-50 , 50-100,..4950-5000  or 0-100 , 100-200, .. 4900-5000 and so on). Dimension of the vector will vary depending on the interval taken. If interval of 50 is taken, dimension will be of size 100. Similarly, if interval of 100 is taken, dimension will be of size 50 and so on. 
 
+The resultant files will be generated in outputfolder. The description of the files are given below:
 
-FILE: result.txt
+FILE: result.txt: Contains the merged responses of all participants
 1. Col1: Word
 2. Col2: Translated/Transliterated
 3. Col3: Valid/Invalid/TimeOut
 4. Col4: Response Time
 
-FILE: output_file.txt
-1. Distinct word sets (57)
+FILE: output_file.txt : Distinct word sets(57)
+1. Col1: Word
 
-FILE: reaction_time_count1.txt
+FILE: reaction_time_count1.txt : Enlists the response times of all participants for each word
 1. Col1: word (for all words)
 2. Col2: participant
 3. Col3: transliterated time
 4. Col4: translated time
 
-FILE: avgreaction_dict1.txt
+FILE: avgreaction_dict1.txt : Enlists the words and their computed metric values
 1. Col1: Word
 2. Col2: Metric1
 3. Col3: Metric 2
