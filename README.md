@@ -11,6 +11,8 @@ Department of Computer science and Engineering, Indian Institute of Technology K
 
 Detailed Project Report: ProjectReport.pdf is uploaded here.
 
+Package dependencies:numpy,scipy
+
 The following files are to be executed in the chronological order as mentioned:
 
 1. **Concat_files.py**: This file is used to extract the files of all valid users ( users who have completed all the 3 surveys ) and write the contents from all users’ files to a file named as “result.txt”
@@ -31,6 +33,10 @@ The metrics and the format of the files are provided below for clear understanda
 **Metric 3**: (Transliterated valid/Average reaction time of transliterated valid)/(Translated valid/Average reaction time of translated valid)
 
 **Metric 4**:  (Transliterated valid/Average reaction time of transliterated valid)/((Translated valid/Average reaction time of translated valid) + (Transliterated invalid/Average reaction time of transliterated invalid))
+
+**Metric 5**:  L2 norm of (Transliterated Word Vector, Translated Word Vector)
+               Word Vector = Probability distribution of the word in a particular interval(0-50 , 50-100,..4950-5000  or 0-100 , 100-200, .. 4900-5000 and so on). Dimension of the vector will vary depending on the interval taken. If interval of 50 is taken, dimension will be of size 100. Similarly, if interval of 100 is taken, dimension will be of size 50 and so on. 
+
 
 FILE: result.txt
 1. Col1: Word
